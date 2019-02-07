@@ -1,6 +1,44 @@
 /* line 1, ../../compass/sass/styles.scss */
 .container {
   display: grid;
-  border: 1px solid green;
-  background: lime;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 3fr 3fr 4fr;
+  grid-template-areas: "profile book calendar" "video video calendar" "twitter weather message" "pinterest notepad message";
+  grid-gap: 1em 1em;
+}
+/* line 12, ../../compass/sass/styles.scss */
+.container .profile {
+  grid-area: profile;
+}
+/* line 16, ../../compass/sass/styles.scss */
+.container .book {
+  grid-area: book;
+}
+/* line 20, ../../compass/sass/styles.scss */
+.container .calendar {
+  grid-area: calendar;
+}
+/* line 24, ../../compass/sass/styles.scss */
+.container .message {
+  grid-area: message;
+}
+/* line 28, ../../compass/sass/styles.scss */
+.container .notepad {
+  grid-area: notepad;
+}
+/* line 32, ../../compass/sass/styles.scss */
+.container .pinterest {
+  grid-area: pinterest;
+}
+/* line 36, ../../compass/sass/styles.scss */
+.container .twitter {
+  grid-area: twitter;
+}
+/* line 40, ../../compass/sass/styles.scss */
+.container .video {
+  grid-area: video;
+}
+/* line 44, ../../compass/sass/styles.scss */
+.container .weather {
+  grid-area: weather;
 }

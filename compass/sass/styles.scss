@@ -1,6 +1,48 @@
 .container{
     display: grid;
-    border: 1px solid green;
-    background: lime; 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 4fr;
+    grid-template-areas:
+		"profile book calendar"
+		"video video calendar"
+        "twitter weather message"
+        "pinterest notepad message"; 
+    grid-gap: 1em 1em; 
+
+    .profile{
+        grid-area: profile;
+    }
+    
+    .book{
+        grid-area: book;
+    }
+    
+    .calendar {
+        grid-area: calendar;
+    }
+    
+    .message {
+        grid-area: message;
+    }
+    
+    .notepad {
+        grid-area: notepad;
+    }
+    
+    .pinterest {
+        grid-area: pinterest;
+    }
+
+    .twitter {
+        grid-area: twitter;
+    }
+
+    .video {
+        grid-area: video;
+    }
+
+    .weather {
+        grid-area: weather;
+    }
 }
 
